@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./main.css" />
+		<title>Form</title>
+	</head>
+	<body>
+		<!-- Окно формы входа и окно ссылок -->
+		<div class="loginFormAndLinks">
+			<!-- Логин и пароль -->
+			<div class="loginFormDiv">
+				<form name="loginForm">
+					<div class="loginGrop">
+						<p>Enter login</p>
+						<input type="email" name="loginInput" class="loginInput" required />
+					</div>
+					<div class="loginGrop">
+						<p>Enter password</p>
+						<input
+							type="password"
+							name="passwordInput"
+							minlength="8"
+							maxlength="12"
+							required
+						/>
+					</div>
+					<div class="loginGrop">
+						<p></p>
+						<input type="button" class="enter" value="Enter" />
+					</div>
+				</form>
+			</div>
+
+			<!-- Ссылки на работы -->
+			<div class="linksDiv">
+				<a href="#" target="_blank">1</a>
+				<a href="#" target="_blank">2</a>
+				<a href="#" target="_blank">3</a>
+				<a href="#" target="_blank">4</a>
+				<a href="#" target="_blank">5</a>
+				<a href="#" target="_blank">6</a>
+			</div>
+		</div>
+
+		<!-- Окно регистрации -->
+		<div class="registrationDiv">
+			<!-- Первое окно регистрации -->
+			<div class="firstRegistrationDiv">
+				<!-- Логин, страна, телефон -->
+				<form name="firstRegistration">
+					<div class="firstRegistrationGrop">
+						<p>Enter email</p>
+						<input type="email" name="emailRegistration" required />
+					</div>
+					<div class="firstRegistrationGrop">
+						<p>Select your country</p>
+						<select name="countryRegistration">
+							<option value="Ukraine">Ukraine</option>
+							<option value="U.S.A">U.S.A</option>
+							<option value="Great Britain">Great Britain</option>
+						</select>
+					</div>
+					<div class="firstRegistrationGrop">
+						<p>Enter your phone number</p>
+						<select name="countryTelRegistration" class="countryTelRegistration">
+							<option value="+38">+38</option>
+							<option value="+1">+1</option>
+							<option value="+44">+44</option>
+						</select>
+						<input
+							type="tel"
+							name="telRegistration"
+							placeholder="000 000 00 00"
+							maxlength="10"
+							minlength="10"
+							required
+						/>
+					</div>
+					<div class="inp">
+						<input type="submit" class="firstBtnNext" value="Next" />
+					</div>
+				</form>
+			</div>
+			<!-- Второе окно регистрации -->
+			<div class="secondRegistrationDiv">
+				<!--Имя, дата рождения, пол -->
+				<form name="secondRegistration">
+					<div class="secondRegistrationGrop">
+						<p>Enter your first and last name</p>
+						<input
+							type="text"
+							name="firstNameRegistration"
+							placeholder="Ivan"
+							required
+						/>
+						<input
+							type="text"
+							name="lastNameRegistration"
+							placeholder="Ivanov"
+							required
+						/>
+					</div>
+					<div class="secondRegistrationGrop">
+						<p>Enter date of birth</p>
+						<input type="date" name="dataOfBirthRegistration" required />
+					</div>
+					<div class="secondRegistrationGrop"></div>
+					<div class="secondRegistrationGrop">
+						<p>Indicate your gender</p>
+						<input
+							type="radio"
+							name="genderRegistration"
+							value="male"
+							checked
+						/>
+						Male
+						<input type="radio" name="genderRegistration" value="female" />
+						Female
+					</div>
+					<div class="inp">
+						<input type="button" class="secondBtnBack" value="Back" />
+						<input type="submit" class="secondBtnNext" value="Next" />
+					</div>
+				</form>
+			</div>
+			<!-- Третье окно регистрации -->
+			<div class="thirdRegistrationDiv">
+				<!-- Пароль, проверка пароля, соглашение -->
+				<form name="thirdRegistration">
+					<div class="thirdRegistrationGrop">
+						<p>Create a password</p>
+						<input
+							type="password"
+							name="passwordCreateRegistration"
+							placeholder="7e84Qare"
+							minlength="8"
+							maxlength="12"
+							required
+						/>
+					</div>
+					<div class="thirdRegistrationGrop">
+						<p>Confirm the password</p>
+						<input
+							type="password"
+							name="passwordConfirmRegistration"
+							placeholder="7e84Qare"
+							minlength="8"
+							maxlength="12"
+							required
+						/>
+					</div>
+					<div class="thirdRegistrationGrop">
+						<a href="#" target="_blank">Terms of agreement</a>
+						<input type="checkbox" name="checkboxTermsRegistration" required />
+					</div>
+					<div class="inp">
+						<input type="button" class="thirdBtnBack" value="Back" />
+						<input type="submit" class="thirdBtnNext" value="Next" />
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<script src="./main.js"></script>
+	</body>
+</html>
